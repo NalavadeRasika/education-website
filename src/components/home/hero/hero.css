@@ -1,0 +1,43 @@
+.hero{
+    background-image: url("../../../../public/image/homepage.jpg");
+    background-size: cover;
+      
+    background-attachment: fixed;
+     background-repeat: no-repeat;
+    position:relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    padding-right: 50px;
+    color: #fff;
+     /* min-height: 100vh;  */
+      /* background-position: center;  */
+}
+
+ .hero #heading{
+    color: #fff;
+    
+ }
+ 
+ .hero #heading{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+ }
+  @media screen and (max-width: 769px) {
+    .margin{
+        height: 40vh;
+    }
+    .hero{
+        background-position: right;
+        padding-top: 50%;
+        height: 80vh;
+    }
+    .hero .row{
+        width: 100%;
+    }
+     
+  } 
