@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  
+
   font-weight: 900;
   background-color: #1eb2a6;
 }
@@ -125,22 +125,27 @@ p {
   padding-right: 50px;
   color: #fff;
   text-align: center;
-  min-height: 60vh;   /* controlled height */
+  min-height: 60vh;
+  /* controlled height */
   padding: 60px 0;
 }
-.back h1{
+
+.back h1 {
   font-size: 100px;
   font-weight: 400;
 }
-back h2{
+
+back h2 {
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
 }
-.marigin{
+
+.marigin {
   margin-top: 40.3%;
-} 
- /* .aboutHome .left img {
+}
+
+/* .aboutHome .left img {
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -169,27 +174,66 @@ back h2{
   width: 50%;
 } */
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat();
-  grid-gap:30px ;
+  grid-gap: 30px;
 }
-.flex{
+
+.flex {
   display: flex;
 }
-.grid2{
+
+.grid2 {
   display: grid;
-   grid-template-columns: repeat();
-  grid-gap:30px ;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
+
+.outline-btn {
+  margin: 0;
+  box-shadow: none;
+  border: 2px solid #1eb2a6;
+  width: 100%;
+  transition: 0.05s;
+}
+
+.outline-btn:hover {
+  background-color: #1eb2a6;
+  color: #fff;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.shadow {
+  box-shadow: 0 5px 25px -2px rgba(0, 0, 0 /6%);
+}
+
 @media screen and (max-width:768px) {
-.back{
-  background-position: center;
- padding-top: 120px;
-    height: auto;
-}   
-.grid {
+
+  .grid3,
+  .grid2,
+  .grid {
     flex-wrap: wrap;
     gap: 15px;
+    grid-template-columns: repeat(2 1fr);
+  }
+
+  .back {
+    background-position: center;
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .marigin {
+    margin-top: 80%;
   }
 }
